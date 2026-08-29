@@ -31,9 +31,9 @@ const NavBar = () => {
             placeholder="Search for products"
             value={searchQuery}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
-            className="w-full border border-gray-200 rounded-full py-1.5 pl-4 pr-10 text-sm focus:outline-none focus:border-blue-900 text-gray-700 placeholder-gray-400"
+            className="w-full border border-blue-900 rounded-full py-1.5 pl-4 pr-10 text-sm focus:outline-none focus:border-blue-900 text-blue-900 placeholder-blue-900"
           />
-          <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-blue-900">
+          <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 text-blue-900 hover:text-blue-900">
             {/* SVG Search Icon */}
             <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
               <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.604 10.604Z" />
@@ -60,7 +60,7 @@ const NavBar = () => {
 
       {/* 3. Right Section: CTA Button */}
       <div className="flex items-center pl-6 border-l border-gray-200 h-10 shrink-0">
-        <button className="bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-semibold py-2 px-5 rounded transition-colors">
+        <button className="hover:bg-blue-900 bg-white hover:text-white text-blue-900 border-2 border-blue-900 text-sm font-semibold py-2 px-5 rounded-lg transition-colors">
           Get Quote
         </button>
       </div>
@@ -69,4 +69,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBar;

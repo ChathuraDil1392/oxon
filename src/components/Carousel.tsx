@@ -50,7 +50,7 @@ const SLIDES_DATA: CarouselSlide[] = [
 
 const Carousel = () => {
   
-   const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const prevSlide = (): void => {
     const isFirstSlide = currentIndex === 0;
@@ -69,17 +69,17 @@ const Carousel = () => {
       
       {/* 1. Background Images Container with Slide Transitions */}
       <div 
-        className="w-screen h-screen flex transition-transform duration-700 ease-out bg-black/80"
+        className="w-full h-full flex transition-transform duration-700 ease-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {SLIDES_DATA.map((slide) => (
           <div 
             key={slide.id}
-            className="w-screen h-screen shrink-0 bg-cover bg-center relative "
+            className="w-full h-full shrink-0 bg-cover bg-center relative"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
-            {/* Subtle dark tint to make text pop over brighter backgrounds */}
-            <div className="absolute inset-0 bg-black/20 mix-blend-multiply" />
+            {/* Dark overlay screen to make white text pop */}
+            <div className="absolute inset-0 bg-black/40" />
           </div>
         ))}
       </div>
@@ -88,7 +88,7 @@ const Carousel = () => {
       <div className="absolute inset-y-0 left-0 w-full max-w-xl md:max-w-2xl px-6 md:px-16 flex flex-col justify-center text-white pointer-events-none z-10">
         
         {/* Dynamic Title Text Layer */}
-        <h1 className="text-3xl md:text-5xl font-extrabold tracking-wide uppercase leading-tight drop-shadow-md select-text transition-all duration-500">
+        <h1 className="text-3xl md:text-5xl font-bold tracking-wide uppercase leading-tight drop-shadow-md select-text transition-all duration-500">
           {SLIDES_DATA[currentIndex].title}
         </h1>
         
@@ -101,7 +101,7 @@ const Carousel = () => {
         <div className="mt-8 pointer-events-auto">
           <a
             href={SLIDES_DATA[currentIndex].ctaLink}
-            className="inline-block bg-white hover:bg-gray-100 text-gray-900 text-xs md:text-sm font-semibold py-2.5 px-6 rounded-full shadow-md transition-all transform hover:scale-[1.02] tracking-wide"
+            className="inline-block bg-white hover:bg-gray-100 text-blue-900 text-xs md:text-sm font-semibold py-2.5 px-6 rounded-lg shadow-md transition-all transform hover:scale-[1.01] tracking-wide "
           >
             {SLIDES_DATA[currentIndex].ctaText}
           </a>
@@ -135,4 +135,4 @@ const Carousel = () => {
   );
 };
   
-export default Carousel
+export default Carousel;

@@ -51,7 +51,7 @@ const Descriptions = () => {
       1. 'px-12 md:px-24 lg:px-32' adds clean, breathing margin spaces on the left and right sides.
       2. 'max-w-6xl mx-auto' clamps the entire card section so it stays smaller and centers beautifully.
     */
-    <div className="w-full bg-gray-50 py-12 px-8 sm:px-16 md:px-24 lg:px-32">
+    <div className="w-full py-12 px-8 sm:px-16 md:px-24 lg:px-32 bg-white">
       <div className="max-w-5xl mx-auto">
         
         {/* The grid container remains items-stretch to keep heights perfectly uniform */}
