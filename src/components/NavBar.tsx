@@ -10,7 +10,7 @@ const NavBar = () => {
   };
   return (
     <nav className="w-full bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between font-sans">
-      
+
       {/* 1. Left Section: Logo */}
       <div className="flex items-center shrink-0">
         <div className="flex flex-col items-center">
@@ -23,7 +23,7 @@ const NavBar = () => {
 
       {/* 2. Middle Section: Search Bar & Navigation Links */}
       <div className="flex items-center space-x-8 grow justify-center max-w-4xl mx-4">
-        
+
         {/* Search Input Box */}
         <form onSubmit={handleSearch} className="relative w-64 xl:w-80">
           <input
@@ -60,7 +60,7 @@ const NavBar = () => {
 
       {/* 3. Right Section: CTA Button */}
       <div className="flex items-center pl-6 border-l border-gray-200 h-10 shrink-0">
-        <button className="hover:bg-blue-900 bg-white hover:text-white text-blue-900 border-2 border-blue-900 text-sm font-semibold py-2 px-5 rounded-lg transition-colors">
+        <button className="hover:bg-blue-900 bg-white hover:text-white text-blue-900 border-2 ease-in-out duration-700 border-blue-900 text-sm font-semibold py-2 px-5 rounded-lg transition-colors">
           Get Quote
         </button>
       </div>

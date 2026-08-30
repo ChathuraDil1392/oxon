@@ -1,6 +1,8 @@
 
 import './App.css'
+import AboutUs from './components/About_us'
 import Carousel from './components/Carousel'
+import Company_Services from './components/Company_Services'
 import Descriptions from './components/Descriptions'
 import HeaderBar from './components/HeaderBar'
 import NavBar from './components/NavBar'
@@ -19,6 +21,8 @@ function App() {
         <Descriptions />
         <Popular_Products />
         <Product_Categories />
+        <Company_Services />
+        <AboutUs />
       </div>
     </>
   )
