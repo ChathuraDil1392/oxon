@@ -35,16 +35,16 @@ const Company_Services = () => {
     ];
 
     return (
-        <div className="w-full bg-blue-900 py-8 px-6 text-white">
+        <div className="w-full bg-blue-950 py-8 px-6 text-white">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-4">
                 {features.map((feature, index) => (
                     <React.Fragment key={index}>
-                        <div className="flex items-center space-x-4 min-w-60 bg-white/10 px-5 py-4 rounded-md">
+                        <div className="flex items-center space-x-4 min-w-60 bg-white/10 px-5 py-6 rounded-md">
                             <div className="shrink-0 flex items-center justify-center  rounded-full">
                                 {feature.icon}
                             </div>
                             <div className="flex flex-col justify-center">
-                                <h3 className="font-bold leading-tight ">
+                                <h3 className="font-bold leading-tight text-amber-400">
                                     {feature.title}
                                 </h3>
                                 <p className="text-sm mt-1 font-medium tracking-wide ">

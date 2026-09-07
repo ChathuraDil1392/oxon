@@ -77,7 +77,7 @@ const ProcessSection: React.FC = () => {
                             </div>
 
                             {/* Top-Right Red Number Badge */}
-                            <div className="absolute top-0 right-0 bg-[#ff3b30] text-white text-xs font-bold px-2.5 py-1.5 rounded-bl-lg shadow-sm">
+                            <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-2.5 py-1.5 rounded-bl-lg shadow-sm">
                                 {step.number}
                             </div>
                         </div>
