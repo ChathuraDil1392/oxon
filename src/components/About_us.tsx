@@ -13,11 +13,11 @@ const AboutUs: React.FC = () => {
                     </span>
 
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-                        Oxon Maldives Pvt Ltd
+                        Oxon Maldives Pvt. Ltd
                     </h2>
 
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed font-normal">
-                        <span className="font-semibold text-gray-900 underline underline-offset-2">Oxon Maldives Pvt Ltd</span> is a Maldives-registered technology integrator
+                        <span className="font-bold text-gray-900 underline underline-offset-2">Oxon Maldives Pvt Ltd</span> is a Maldives-registered technology integrator
                         specializing in smart automation for homes and hospitality spaces. We offer
                         end-to-end solutions from design and supply to installation and support combining
                         reliable hardware, software, and user-focused design. As the <span className="font-bold text-gray-900 underline underline-offset-2">Exclusive Orbita partner</span> and an <span className="font-bold text-gray-900 underline underline-offset-2">Authorized TIS seller</span> in the Maldives, we bring
@@ -26,18 +26,18 @@ const AboutUs: React.FC = () => {
                     </p>
 
                     <div className="pt-4">
-                        <button className="bg-blue-900 hover:bg-blue-800 text-white font-medium text-sm py-3 px-8 transition-colors duration-200 shadow-sm rounded-md">
-                            Explore More
+                        <button className="bg-blue-900 hover:bg-blue-800 text-white font-medium text-sm py-3 px-5 transition-colors duration-200 shadow-sm rounded-xl">
+                            Explore More...
                         </button>
                     </div>
                 </div>
 
                 {/* Right Image Column */}
-                <div className="w-full h-87.5 md:h-112.5 overflow-hidden">
+                <div className="group w-full h-87.5 md:h-112.5 overflow-hidden rounded-md">
                     <img
                         src={aboutus}
                         alt="Smart home door lock automation"
-                        className="w-full h-full object-cover rounded-md"
+                        className="w-full h-full object-cover transform-gpu transition-transform duration-500 ease-in-out group-hover:scale-105"
                     />
                 </div>
 
