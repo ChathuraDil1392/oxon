@@ -65,7 +65,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-125 md:h-150 lg:h-162.5 overflow-hidden group select-none mb-5">
+    <div className="relative w-full h-125 md:h-150 lg:h-162.5 overflow-hidden group select-none">
 
       {/* 1. Background Images Container with Slide Transitions */}
       <div

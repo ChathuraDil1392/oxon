@@ -41,7 +41,7 @@ const ProcessSection: React.FC = () => {
     ];
 
     return (
-        <section className="w-full bg-[#fafafa] py-16 px-6 md:px-12 lg:px-24">
+        <section className="w-full bg-slate-100 py-16 px-6 md:px-12 lg:px-24">
             <div className="max-w-7xl mx-auto">
 
                 {/* Header Section */}

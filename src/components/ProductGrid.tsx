@@ -5,12 +5,13 @@ import finger_3 from '../assets/finger_3.png'
 
 const ProductGrid: React.FC = () => {
     return (
-        <section className="w-full bg-white py-10 px-6 md:px-12 lg:px-24">
+        // Force any inherited shadows or border overlays to hide
+        // Added pt-0 to explicitly remove top padding
+        <section className="relative z-50 w-full bg-white pt-0 pb-10 px-6 md:px-12 lg:px-24 shadow-none!">
             <div className="max-w-7xl mx-auto">
-
                 {/* Main Section Title */}
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-12 tracking-tight">
-                    Oxon Provide End-to-End Solutions
+                    {/* Provisioniong of End-to-End Solutions */}
                 </h2>
 
                 {/* Fixed Bento Grid Container */}
@@ -53,7 +54,6 @@ const ProductGrid: React.FC = () => {
                                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-black/40" />
-
                             <div className="absolute inset-y-0 left-0 p-8 flex flex-col justify-center text-white space-y-1 z-10">
                                 <h3 className="text-lg font-bold tracking-tight">
                                     Innovation Meets Elegance
@@ -76,7 +76,6 @@ const ProductGrid: React.FC = () => {
                                 alt="Hospitality and Home"
                                 className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-500 group-hover:scale-105"
                             />
-
                             <div className="absolute inset-y-0 left-0 p-8 flex flex-col justify-center text-gray-900 space-y-1 z-10">
                                 <h3 className="text-lg font-bold uppercase tracking-wide">
                                     Hospitality And Home
@@ -93,7 +92,6 @@ const ProductGrid: React.FC = () => {
                         </div>
 
                     </div>
-
                 </div>
             </div>
         </section>

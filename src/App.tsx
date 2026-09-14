@@ -13,6 +13,9 @@ import ProcessSection from './components/ProcessSection'
 // import Product_Categories from './components/Product_Categories'
 import CleanProductGrid from './components/CleanProductGrid'
 import ProductGrid from './components/ProductGrid'
+import { NewArrivals } from './components/NewArrivals'
+import { AnnouncementTicker } from './components/AnnouncementTicker'
+import CustomerReviews from './components/CustomerReviews'
 
 function App() {
 
@@ -24,11 +27,16 @@ function App() {
         <NavBar />
         <Carousel />
         <Brands />
-        <CleanProductGrid />
+        <AnnouncementTicker />
+        <NewArrivals />
         <ProductGrid />
+        <CustomerReviews />
+        <CleanProductGrid />
+
         <Company_Services />
         <ProcessSection />
         <AboutUs />
+
         {/* <Descriptions /> */}
         {/* <Popular_Products /> */}
         {/* <Product_Categories /> */}
