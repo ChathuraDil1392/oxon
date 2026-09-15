@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import homelock from '../assets/smlock.png'
-import hotellock from '../assets/smhotel.png'
-import minibar from '../assets/minibar.png'
-import bathlock from '../assets/brlock.png'
-import cabinet from '../assets/cabinet.png'
-import accessories from '../assets/accesories.png'
-import phone from '../assets/phone.png'
-import switch1 from '../assets/switch.png'
-import dryer from '../assets/dryer.png'
-import kettle from '../assets/kettle.png'
-import safe from '../assets/safe.png'
-import plate from '../assets/plate.png'
+import { useState } from 'react';
+import accessories from '../assets/accesories.png';
+import bathlock from '../assets/brlock.png';
+import cabinet from '../assets/cabinet.png';
+import dryer from '../assets/dryer.png';
+import kettle from '../assets/kettle.png';
+import minibar from '../assets/minibar.png';
+import phone from '../assets/phone.png';
+import plate from '../assets/plate.png';
+import safe from '../assets/safe.png';
+import hotellock from '../assets/smhotel.png';
+import homelock from '../assets/smlock.png';
+import switch1 from '../assets/switch.png';
 
 interface ProductItem {
     id: string;
