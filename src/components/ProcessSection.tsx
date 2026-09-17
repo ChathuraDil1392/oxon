@@ -47,7 +47,7 @@ const ProcessSection: React.FC = () => {
                 {/* Header Section */}
                 <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-                        How Our Process Works?
+                        How <span className='text-blue-500'>Our Process</span>  Works?
                     </h2>
                     <p className="text-gray-500 text-sm leading-relaxed">
                         At Oxon, we follow a simple yet thorough process to ensure every project is executed with precision and care, from understanding your needs to providing lasting support.

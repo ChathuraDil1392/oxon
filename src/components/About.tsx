@@ -236,7 +236,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[#1c1c1c] text-white py-20 px-6 md:px-16 font-sans overflow-hidden">
+            <section className="bg-slate-900 text-white py-20 px-6 md:px-16 font-sans overflow-hidden">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
                     {/* Left Side Content & Timeline Layout */}

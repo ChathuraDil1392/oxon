@@ -26,7 +26,7 @@ export const AnnouncementTicker: React.FC = () => {
     const instances = Array(6).fill(tickerText);
 
     return (
-        <div className="w-full bg-blue-900 py-2 overflow-hidden select-none">
+        <div className="w-full bg-blue-600 py-2 overflow-hidden select-none">
             {/* Outer Flex container acting as the track */}
             <div className="flex w-max">
 

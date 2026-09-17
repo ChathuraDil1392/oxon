@@ -105,7 +105,7 @@ export const CustomerReviews: React.FC = () => {
                     {/* Grid 1: Left Text Block */}
                     <div className="lg:col-span-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left h-full">
                         <h2 className="text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl mb-4">
-                            Customer Reviews
+                            Customer <span className='text-blue-500'>Reviews</span>
                         </h2>
                         <p className="text-base text-gray-500 max-w-sm">
                             Explore the experiences of our clients with our work, showing our dedication to delivering exceptional results.

@@ -12,7 +12,7 @@ const ProductGrid: React.FC = () => {
                 {/* Main Section Title */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl">
-                        We are Providing End to End Solutions
+                        We are Providing <span className='text-blue-500'>End to End Solutions</span>
                     </h2>
                     <p className="mt-3 max-w-2xl mx-auto text-sm text-gray-500 sm:mt-4">
                         Orbita has maintain the strong position and served more than 10,000 hotel clients.
