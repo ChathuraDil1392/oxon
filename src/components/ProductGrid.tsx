@@ -7,12 +7,17 @@ const ProductGrid: React.FC = () => {
     return (
         // Force any inherited shadows or border overlays to hide
         // Added pt-0 to explicitly remove top padding
-        <section className="relative z-50 w-full bg-white pt-0 pb-10 px-6 md:px-12 lg:px-24 shadow-none!">
+        <section className="relative z-50 w-full bg-white pt-0 pb-10 px-6 md:px-12 lg:px-24 shadow-none! mt-8">
             <div className="max-w-7xl mx-auto">
                 {/* Main Section Title */}
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-12 tracking-tight">
-                    {/* Provisioniong of End-to-End Solutions */}
-                </h2>
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl">
+                        We are Providing End to End Solutions
+                    </h2>
+                    <p className="mt-3 max-w-2xl mx-auto text-sm text-gray-500 sm:mt-4">
+                        Orbita has maintain the strong position and served more than 10,000 hotel clients.
+                    </p>
+                </div>
 
                 {/* Fixed Bento Grid Container */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-auto lg:h-137.5">

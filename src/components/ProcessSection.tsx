@@ -9,32 +9,32 @@ interface ProcessStep {
 const ProcessSection: React.FC = () => {
     const steps: ProcessStep[] = [
         {
-            number: '01.',
+            number: '01',
             title: 'Client Requirement Clarification',
             description: 'Every project starts with a detailed discussion. We take time to understand your specific needs, objectives, and operational environment, ensuring our approach aligns perfectly with your vision.',
         },
         {
-            number: '02.',
+            number: '02',
             title: 'Site Survey and Technical Assessment',
             description: 'Our experts visit your site to perform a thorough technical survey, evaluating every detail and collecting accurate data for informed decision-making.',
         },
         {
-            number: '03.',
+            number: '03',
             title: 'Design and Calculation',
             description: 'Based on the survey results, we design the most efficient and cost-effective solution, performing detailed calculations to ensure optimal performance.',
         },
         {
-            number: '04.',
+            number: '04',
             title: 'BOQ Preparation and Cost Agreement',
             description: 'We prepare a transparent Bill of Quantities (BOQ) and a fair cost proposal. Once mutually agreed, this serves as the foundation for smooth project execution.',
         },
         {
-            number: '05.',
+            number: '05',
             title: 'Supply and Professional Installation',
             description: 'We manage procurement, supply, and installation with precision. Our skilled engineers ensure all systems are installed correctly, safely, and on time.',
         },
         {
-            number: '06.',
+            number: '06',
             title: 'After-Sales Service and Maintenance',
             description: 'Our relationship continues well beyond installation. We provide ongoing maintenance, quick-response technical support, and system health checks to guarantee long-term reliability.',
         },
@@ -77,7 +77,7 @@ const ProcessSection: React.FC = () => {
                             </div>
 
                             {/* Top-Right Red Number Badge */}
-                            <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-2.5 py-1.5 rounded-bl-lg shadow-sm">
+                            <div className="absolute top-0 right-0 bg-amber-400 text-white text-xs font-bold px-2.5 py-1.5 rounded-bl-lg shadow-sm">
                                 {step.number}
                             </div>
                         </div>

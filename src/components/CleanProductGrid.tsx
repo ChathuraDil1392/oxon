@@ -44,10 +44,14 @@ export default function CleanProductGrid() {
     return (
         <>
             <div className='bg-white'>
-                <h2 className="text-3xl font-bold text-center tracking-tight text-slate-900 sm:text-4xl ">
+
+                <h2 className="text-3xl font-bold text-center tracking-tight text-slate-900 sm:text-4xl mt-8">
                     What We Have?
                 </h2>
-                <div className="w-full max-w-7xl mx-auto px-6 py-16 bg-white font-sans">
+                <p className="text-md text-center tracking-tight text-slate-500 mt-8">
+                    We have each and every type of smart solutions you need.
+                </p>
+                <div className="w-full max-w-7xl mx-auto px-6 pt-10 pb-8 bg-white font-sans">
 
                     {/* 🏷️ Clean Enterprise Section Header */}
                     <div className="border-b border-slate-100 pb-8 mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
@@ -60,7 +64,7 @@ export default function CleanProductGrid() {
                                     onClick={() => setSelectedCategory(cat)}
                                     className={`px-4 py-2 text-xs font-semibold rounded-lg capitalize transition-all ${selectedCategory === cat
                                         ? 'bg-white text-slate-900 shadow-sm border border-blue-700'
-                                        : 'text-slate-500 hover:text-blue-900'
+                                        : 'text-slate-500 hover:text-blue-800'
                                         }`}
                                 >
                                     {cat}

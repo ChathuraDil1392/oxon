@@ -1,50 +1,57 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import AboutUs from './components/About_us'
-import Brands from './components/Brands'
-import Carousel from './components/Carousel'
-import Company_Services from './components/Company_Services'
+import About from './components/About'
 // import Descriptions from './components/Descriptions'
+
+import ContactusPage from './components/ContactusPage'
 import Footer from './components/Footer'
 import HeaderBar from './components/HeaderBar'
 import NavBar from './components/NavBar'
+import Home from './components/Home'
 // import Popular_Products from './components/Popular_Products'
-import ProcessSection from './components/ProcessSection'
 // import Product_Categories from './components/Product_Categories'
-import CleanProductGrid from './components/CleanProductGrid'
-import ProductGrid from './components/ProductGrid'
-import { NewArrivals } from './components/NewArrivals'
-import { AnnouncementTicker } from './components/AnnouncementTicker'
-import CustomerReviews from './components/CustomerReviews'
+//import CleanProductGrid from './components/CleanProductGrid'
 
 function App() {
 
 
   return (
     <>
-      <div>
+
+      <BrowserRouter>
         <HeaderBar />
         <NavBar />
-        <Carousel />
+
+        <Routes>
+          <Route path='/' element={<Home />} />,
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<ContactusPage />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+
+
+      {/* <ContactusPage /> */}
+      {/* <Carousel />
         <Brands />
         <AnnouncementTicker />
         <NewArrivals />
         <ProductGrid />
-        <CustomerReviews />
-        <CleanProductGrid />
-
         <Company_Services />
+        <CustomerReviews />
         <ProcessSection />
-        <AboutUs />
+        <AboutUs /> */}
 
-        {/* <Descriptions /> */}
-        {/* <Popular_Products /> */}
-        {/* <Product_Categories /> */}
-        {/* <OrbitaBanner /> */}
-        {/* <OrbitaReferences /> */}
-        {/* <CompanyStats /> */}
-        <Footer />
-      </div>
+      {/* <CleanProductGrid /> */}
+      {/* <Descriptions /> */}
+      {/* <Popular_Products /> */}
+      {/* <Product_Categories /> */}
+      {/* <OrbitaBanner /> */}
+      {/* <OrbitaReferences /> */}
+      {/* <CompanyStats /> */}
+
+
     </>
   )
 }

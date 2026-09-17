@@ -48,16 +48,16 @@ const productGridItems: ProductItem[] = [
     },
     {
         id: "3",
-        title: "ITEM NO.: RFID HOTEL LOCK",
-        model: "LS-8088",
+        title: "Face ID Smart Lock",
+        model: "P8031A",
         imageSrc: image_5,
         buttonText: "VIEW MORE",
         features: ['card', 'key']
     },
     {
         id: "4",
-        title: "ITEM NO.: RFID HOTEL LOCK",
-        model: "LS-8072",
+        title: "Bluetooth / TUYA Smart Lock",
+        model: "P7034",
         imageSrc: image_6,
         buttonText: "VIEW MORE",
         features: ['card', 'key']
@@ -94,15 +94,15 @@ const FeatureIcon: React.FC<{ type: FeatureType }> = ({ type }) => {
 
 export const NewArrivals: React.FC = () => {
     return (
-        <section className="bg-white py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto font-sans">
+        <section className="bg-white py-12 px-4 sm:px-6 lg:px-1 max-w-7xl mx-auto font-sans mb-2">
 
             {/* Header Section */}
             <div className="text-center mb-12">
-                <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+                <h2 className="text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl">
                     Our New Products
                 </h2>
                 <p className="mt-3 max-w-2xl mx-auto text-sm text-gray-500 sm:mt-4">
-                    Locstar has maintain the strong position and served more than 10,000 hotel clients.
+                    Orbita has maintain the strong position and served more than 10,000 hotel clients.
                 </p>
             </div>
 
@@ -138,7 +138,7 @@ export const NewArrivals: React.FC = () => {
                     {productGridItems.map((item) => (
                         <div
                             key={item.id}
-                            className="border border-gray-100 rounded-lg p-6 bg-white flex justify-between items-center shadow-sm hover:shadow-md transition-shadow duration-200 min-h-[220px]"
+                            className="border border-blue-100 rounded-lg p-6 bg-white flex justify-between items-center shadow-xs hover:shadow-md transition-shadow duration-200 min-h-[220px]"
                         >
                             {/* Product Info Column */}
                             <div className="flex flex-col justify-between h-full pr-4 flex-1">
@@ -147,28 +147,28 @@ export const NewArrivals: React.FC = () => {
                                     <img
                                         src={logoOrbita}
                                         alt="Orbita Logo"
-                                        className="h-8 w-auto object-contain mb-3 block"
+                                        className="h-10 w-auto object-contain mb-3 block"
                                     />
 
                                     {/* Model Number */}
-                                    <p className="text-sm font-black text-gray-900 mb-1">
+                                    <p className="text-sm font-black text-gray-900 mb-1 pl-2">
                                         {item.model}
                                     </p>
 
                                     {/* Product Title */}
-                                    <h4 className="text-xs font-bold text-gray-700 uppercase tracking-tight leading-snug max-w-45">
+                                    <h4 className="text-xs font-bold text-gray-700 tracking-tight leading-snug max-w-45 pl-2">
                                         {item.title}
                                     </h4>
 
                                     {/* Horizontal Icon Row Positioned Directly After Title */}
-                                    <div className="flex flex-wrap items-center gap-0.5 mt-3 mb-2">
+                                    <div className="flex flex-wrap items-center gap-0.5 mt-3 mb-2 pl-1">
                                         {item.features.map((feature, index) => (
                                             <FeatureIcon key={index} type={feature} />
                                         ))}
                                     </div>
                                 </div>
 
-                                <div className="mt-auto pt-4">
+                                <div className="mt-auto pt-4 pl-2">
                                     <button className="bg-blue-900 hover:bg-blue-700 text-white font-medium text-xs px-5 py-2 rounded tracking-wider transition-colors duration-200">
                                         {item.buttonText}
                                     </button>
@@ -180,7 +180,7 @@ export const NewArrivals: React.FC = () => {
                                 <img
                                     src={item.imageSrc}
                                     alt={`${item.title} ${item.model}`}
-                                    className="max-w-full max-h-48 object-contain object-center mix-blend-multiply"
+                                    className="max-w-full max-h-48 object-contain object-center mix-blend-multiply hover:scale-105 transition-transform duration-200 ease-in-out"
                                     loading="lazy"
                                 />
                             </div>
