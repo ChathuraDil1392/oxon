@@ -171,7 +171,7 @@ const About = () => {
                                 <img
                                     src={worker_1}
                                     alt="Professional woman"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover grayscale hover:grayscale-0"
                                 />
                             </div>
 
@@ -184,7 +184,7 @@ const About = () => {
                                 <img
                                     src={oxon}
                                     alt="Office workspace"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover grayscale hover:grayscale-0"
                                 />
                             </div>
                         </div>
