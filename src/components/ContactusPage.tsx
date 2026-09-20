@@ -1,5 +1,5 @@
 import { useState } from "react";
-import banner from '../assets/banner_3.jpg'
+import banner from '../assets/banner_3_1.png'
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { FiFacebook } from 'react-icons/fi';
 import { FaInstagram, FaWhatsapp, FaViber } from 'react-icons/fa';
@@ -61,7 +61,7 @@ const ContactusPage = () => {
                                 Contact Oxon Tech
                             </p>
                             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
-                                Tell us what you need to solve.
+                                Tell us what you need to <span className="text-blue-500">Solve.</span>
                             </h2>
                             <p className="text-gray-300 text-base sm:text-sm md:text-md max-w-2xl leading-relaxed mb-12">
                                 Give us a little context about your organisation and what you are looking to achieve.
@@ -139,7 +139,7 @@ const ContactusPage = () => {
                     </div>
 
                     {/* Right Column: Form Box */}
-                    <div className="lg:col-span-7 bg-white/80 p-8 sm:p-10 rounded-2xl border border-blue-800/50">
+                    <div className="lg:col-span-7 bg-white p-8 sm:p-10 rounded-2xl border border-blue-800/50">
                         <form onSubmit={handleSubmit} className="space-y-8">
 
                             {/* Row 1: Name & Email */}

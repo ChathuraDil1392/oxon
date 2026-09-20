@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import HeaderBar from './components/HeaderBar'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
+import OurProjetcs from './components/OurProjetcs'
 // import Popular_Products from './components/Popular_Products'
 // import Product_Categories from './components/Product_Categories'
 //import CleanProductGrid from './components/CleanProductGrid'
@@ -27,6 +28,7 @@ function App() {
           <Route path='/' element={<Home />} />,
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<ContactusPage />} />
+          <Route path='/our_projects' element={<OurProjetcs />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -79,7 +79,7 @@ const Carousel = () => {
             style={{ backgroundImage: `url(${slide.image})` }}
           >
             {/* Dark overlay screen to make white text pop */}
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-black/10" />
           </div>
         ))}
       </div>

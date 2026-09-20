@@ -59,7 +59,8 @@ const ProcessSection: React.FC = () => {
                     {steps.map((step, index) => (
                         <div
                             key={index}
-                            className="relative bg-white border border-gray-100 rounded-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-700 ease-in-out flex flex-col justify-between overflow-hidden group hover:bg-blue-900 hover:shadow-[0_8px_30px_rgba(30,58,138,0.3)]"
+                            className={`relative ${index % 2 === 0 ? 'bg-white' : 'bg-blue-900'} border border-gray-100 ${index % 2 === 0 ? 'text-black' : 'text-white'} rounded-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-700 ease-in-out flex flex-col justify-between overflow-hidden group hover:bg-blue-900 hover:shadow-[0_8px_30px_rgba(30,58,138,0.3)]`}
+
                         >
                             {/* Background Decorative Dotted Pattern — hidden on hover to keep the blue background clean */}
                             <div className="absolute top-0 left-0 w-24 h-24 opacity-5 pointer-events-none bg-[radial-gradient(#000_1px,transparent_1px)] [bg-size:12px_12px] group-hover:opacity-0 transition-opacity duration-700" />
@@ -67,17 +68,17 @@ const ProcessSection: React.FC = () => {
                             {/* Added transition-colors to the wrapper */}
                             <div className="space-y-4 pr-12 transition-colors duration-300">
                                 {/* Changed to group-hover:text-white */}
-                                <h3 className="text-lg font-bold text-gray-900 leading-snug group-hover:text-white transition-colors duration-300">
+                                <h3 className="text-lg font-bold ${index % 2 === 0 ? 'text-gray-600' : 'text-white'} leading-snug group-hover:text-white transition-colors duration-300">
                                     {step.title}
                                 </h3>
                                 {/* Changed to group-hover:text-white/90 for excellent readability on blue */}
-                                <p className="text-gray-500 text-xs md:text-sm leading-relaxed font-normal group-hover:text-white/90 transition-colors duration-300">
+                                <p className="${index % 2 === 0 ? 'text-gray-500' : 'text-white'} text-xs md:text-sm leading-relaxed font-normal group-hover:text-white/90 transition-colors duration-300">
                                     {step.description}
                                 </p>
                             </div>
 
                             {/* Top-Right Red Number Badge */}
-                            <div className="absolute top-0 right-0 bg-amber-400 text-white text-xs font-bold px-2.5 py-1.5 rounded-bl-lg shadow-sm">
+                            <div className="absolute top-0 right-0 bg-amber-500 text-white text-xs font-bold px-2.5 py-1.5 rounded-bl-lg shadow-sm">
                                 {step.number}
                             </div>
                         </div>

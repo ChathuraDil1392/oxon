@@ -47,10 +47,11 @@ const teamAvatars = [
 const About = () => {
     const timelineData: TimelineYear[] = [
         { year: 2000, title: 'Establishment & Foundation', image: oxon_logo },
-        { year: 2005, title: 'Expanding Our Horizons', image: 'https://unsplash.com' },
-        { year: 2010, title: 'Going Global Innovation', image: 'https://unsplash.com' },
-        { year: 2018, title: 'Digital Transformation Peak', image: 'https://unsplash.com' },
-        { year: 2023, title: 'The AI and Pixel Era', image: 'https://unsplash.com' },
+        { year: 2005, title: 'Expanding Our Horizons', image: oxon_logo },
+        { year: 2010, title: 'Going Global Innovation', image: oxon_logo },
+        { year: 2018, title: 'Orbita Exclusive Seller for Maldives', image: oxon_logo },
+        { year: 2023, title: 'The AI and Pixel Era', image: oxon_logo },
+        { year: 2026, title: 'Associated With ZKT', image: oxon_logo },
     ];
 
     const strategies: StrategyItem[] = [
@@ -127,7 +128,7 @@ const About = () => {
 
     ];
 
-    const [activeIdx, setActiveIdx] = useState<number>(0);
+    const [activeIdx, setActiveIdx] = useState<number>(5);
     return (
         <>
             <section className="bg-blue-950 text-white py-20 px-6 md:px-16 font-sans">
@@ -153,7 +154,7 @@ const About = () => {
                             <img
                                 src={tech_2}
                                 alt="Team collaboration"
-                                className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500"
+                                className="w-full h-full object-cover grayscale-0 opacity-80 group-hover:grayscale transition-all duration-500"
                             />
                         </div>
                     </div>
@@ -171,7 +172,7 @@ const About = () => {
                                 <img
                                     src={worker_1}
                                     alt="Professional woman"
-                                    className="w-full h-full object-cover grayscale hover:grayscale-0"
+                                    className="w-full h-full object-cover grayscale-0 hover:grayscale"
                                 />
                             </div>
 
@@ -184,7 +185,7 @@ const About = () => {
                                 <img
                                     src={oxon}
                                     alt="Office workspace"
-                                    className="w-full h-full object-cover grayscale hover:grayscale-0"
+                                    className="w-full h-full object-cover grayscale-0 hover:grayscale"
                                 />
                             </div>
                         </div>

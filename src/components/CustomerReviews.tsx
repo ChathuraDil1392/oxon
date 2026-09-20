@@ -97,7 +97,7 @@ export const CustomerReviews: React.FC = () => {
         }, 500);
     }
     return (
-        <div className='bg-slate-50'>
+        <div className='bg-slate-50 pt-10'>
             <section className="bg-slate-50 pt-12 pb-10 px-6 max-w-7xl mx-auto font-sans overflow-hidden">
                 {/* Split Screen Grid Layout */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">

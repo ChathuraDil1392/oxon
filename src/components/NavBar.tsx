@@ -71,6 +71,17 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
+              to="/our_projects"
+              className={({ isActive }) =>
+                `block pb-1 cursor-pointer transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
+                }`
+              }
+            >
+              Our Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/about"
               className={({ isActive }) =>
                 `block pb-1 cursor-pointer transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
@@ -91,17 +102,7 @@ const NavBar = () => {
               Contact us
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to="/references"
-              className={({ isActive }) =>
-                `block pb-1 cursor-pointer transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
-                }`
-              }
-            >
-              References
-            </NavLink>
-          </li>
+
         </ul>
       </div>
 
