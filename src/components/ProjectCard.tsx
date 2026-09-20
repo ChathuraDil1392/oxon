@@ -103,7 +103,7 @@ export const ProjectCard: React.FC = () => {
         <div className="w-full max-w-6xl mx-auto px-4 py-8 bg-white font-sans text-neutral-600">
 
             {/* Dynamic Tab Filter Bar */}
-            <div className="flex flex-wrap items-center gap-2 mb-10 border-b border-blue-700 pb-8">
+            <div className="flex flex-wrap items-center gap-2 mb-10 border-b border-blue-900 pb-8">
                 {CATEGORIES.map((category) => {
                     const isActive = activeTab === category;
                     return (
@@ -112,7 +112,7 @@ export const ProjectCard: React.FC = () => {
                             onClick={() => setActiveTab(category)}
                             className={`px-4 py-2 text-sm rounded font-medium transition-all duration-200 ${isActive
                                 ? 'bg-blue-900 text-white shadow-sm'
-                                : 'bg-neutral-50 text-neutral-500 hover:bg-neutral-100 border border-neutral-200'
+                                : 'bg-white text-neutral-500 border-blue-900 hover:bg-blue-800 hover:text-white border '
                                 }`}
                         >
                             {category}
@@ -139,7 +139,7 @@ export const ProjectCard: React.FC = () => {
 
                             {/* Top-left Badge Indicator */}
                             {post.hashTag && (
-                                <span className="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-2 py-1 rounded shadow-sm">
+                                <span className="absolute top-3 left-3 bg-blue-800 text-white text-xs font-bold px-2 py-1 rounded shadow-sm">
                                     {post.hashTag}
                                 </span>
                             )}

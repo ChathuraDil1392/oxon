@@ -33,7 +33,7 @@ const NavBar = () => {
             placeholder="Search for products"
             value={searchQuery}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
-            className="w-full border border-blue-900 rounded-full py-1.5 pl-4 pr-10 text-sm focus:outline-none focus:border-blue-900 text-blue-900 placeholder-blue-900"
+            className="w-full border-2 border-blue-900 rounded-lg py-1.5 pl-4 pr-10 text-sm focus:outline-none focus:border-blue-900 text-blue-900 placeholder-blue-900"
           />
           <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 text-blue-900 hover:text-blue-900">
             <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
