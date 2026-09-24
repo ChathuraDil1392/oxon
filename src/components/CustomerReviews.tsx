@@ -132,7 +132,7 @@ export const CustomerReviews: React.FC = () => {
                                             <img
                                                 src={review.avatarUrl}
                                                 alt={review.name}
-                                                className="w-10 h-10 rounded-full object-cover bg-gray-100 border-[0.5px] p-0.5 border-blue-900"
+                                                className="w-10 h-10 rounded-full object-cover bg-gray-100 border p-1 border-blue-900"
                                             />
                                             <div>
                                                 <h3 className="text-sm font-semibold text-gray-900 leading-none mb-1">
@@ -167,7 +167,7 @@ export const CustomerReviews: React.FC = () => {
                                     </div>
 
                                     {/* Structural text box spacing */}
-                                    <div className="mt-auto pt-2 border-t border-blue-900/50">
+                                    <div className="mt-auto pt-2 border-t-2 border-blue-900">
                                         <p className="text-sm text-gray-600 leading-relaxed min-h-18 line-clamp-3">
                                             {review.reviewText}
                                         </p>

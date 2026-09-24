@@ -135,13 +135,17 @@ const About = () => {
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
                     {/* Left Column */}
-                    <div className="lg:col-span-6 space-y-10">
+                    <div className="lg:col-span-6 space-y-8">
                         {/* Header Tag */}
                         <div className="flex items-center space-x-1">
-                            <p className="text-amber-400 uppercase tracking-widest text-lg font-semibold mb-4">
-                                About Oxon Tech
-                            </p>
+                            <div>
+                                <p className="text-amber-400 uppercase tracking-widest text-lg font-semibold mb-4">
+                                    About Oxon Maldives
+                                </p>
+                                <div className="border-t-2 border-amber-500 h-2 w-10"></div>
+                            </div>
                         </div>
+
 
                         {/* Main Heading */}
                         <h2 className="text-4xl md:text-5xl font-bold leading-tight tracking-tight max-w-xl">

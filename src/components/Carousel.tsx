@@ -79,21 +79,21 @@ const Carousel = () => {
             style={{ backgroundImage: `url(${slide.image})` }}
           >
             {/* Dark overlay screen to make white text pop */}
-            <div className="absolute inset-0 bg-black/10" />
+            <div className="absolute inset-0 bg-black/5" />
           </div>
         ))}
       </div>
 
       {/* 2. Absolute Content Overlay (Fixed relative to current visible frame layout) */}
-      <div className="absolute inset-y-0 left-0 w-full max-w-xl md:max-w-2xl px-6 md:px-16 flex flex-col justify-center text-white pointer-events-none z-10">
-
+      {/* 2. Absolute Content Overlay (Fixed relative to current visible frame layout) */}
+      <div className="absolute ml-15 top-1/2 -translate-y-1/2 left-0 w-full max-w-xl p-5 md:p-5 flex flex-col justify-center bg-blue-950/80 text-white pointer-events-none z-10 py-8 rounded-lg">
         {/* Dynamic Title Text Layer */}
-        <h1 className="text-3xl md:text-5xl font-bold tracking-wide uppercase leading-tight drop-shadow-md select-text transition-all duration-500">
+        <h1 className="text-xl md:text-2xl font-bold tracking-wide uppercase leading-tight drop-shadow-md select-text transition-all duration-500">
           {SLIDES_DATA[currentIndex].title}
         </h1>
 
         {/* Dynamic Paragraph Description Layer */}
-        <p className="mt-4 text-sm md:text-base text-gray-100 font-normal leading-relaxed max-w-lg tracking-wide drop-shadow-sm select-text transition-all duration-500 delay-70">
+        <p className="mt-4 text-sm md:text-base font-light leading-relaxed max-w-lg tracking-wide drop-shadow-sm select-text transition-all duration-500 delay-70">
           {SLIDES_DATA[currentIndex].description}
         </p>
 
@@ -101,12 +101,13 @@ const Carousel = () => {
         <div className="mt-8 pointer-events-auto">
           <a
             href={SLIDES_DATA[currentIndex].ctaLink}
-            className="inline-block bg-white hover:bg-gray-100 text-blue-900 text-xs md:text-sm font-semibold py-2 px-4 rounded-lg shadow-md transition-all transform hover:scale-[1.01] tracking-wide "
+            className="inline-block bg-white  hover:bg-gray-100 text-blue-900 text-xs md:text-sm font-semibold py-2 px-4 rounded-lg shadow-md transition-all transform hover:scale-[1.01] tracking-wide"
           >
             {SLIDES_DATA[currentIndex].ctaText}
           </a>
         </div>
       </div>
+
 
       {/* 3. Navigation Arrow Assets */}
       {/* Left Chevron */}

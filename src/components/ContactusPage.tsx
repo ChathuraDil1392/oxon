@@ -57,10 +57,13 @@ const ContactusPage = () => {
                     <div className="lg:col-span-5 flex flex-col justify-between">
                         <div>
                             {/* Updated headline text here */}
-                            <p className="text-amber-400 uppercase tracking-widest text-lg font-semibold mb-4">
-                                Contact Oxon Tech
-                            </p>
-                            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
+                            <div>
+                                <p className="text-amber-400 uppercase tracking-widest text-lg font-semibold mb-4">
+                                    Contact Oxon Maldives
+                                </p>
+                                <div className="border-t-2 border-amber-500 h-2 w-10"></div>
+                            </div>
+                            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6 mt-6">
                                 Tell us what you need to <span className="text-blue-500">Solve.</span>
                             </h2>
                             <p className="text-gray-300 text-base sm:text-sm md:text-md max-w-2xl leading-relaxed mb-12">
@@ -243,7 +246,7 @@ const ContactusPage = () => {
 
                             {/* Privacy Disclaimer */}
                             <p className="text-[11px] text-blue-900 leading-normal font-bold">
-                                By submitting this form, you agree to Oxon Tech processing your information in accordance with our{' '}
+                                By submitting this form, you agree to Oxon Maldives processing your information in accordance with our{' '}
                                 <a href="#" className="underline hover:text-white">Privacy Notice</a>.
                             </p>
                         </form>

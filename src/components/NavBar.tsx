@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Logo from '../assets/Logo.png';
+import Logo from '../assets/logo_long.png';
 const NavBar = () => {
   const [searchQuery, setSearchQuery] = useState<string>('');
   // const navigate = useNavigate();
@@ -17,8 +17,8 @@ const NavBar = () => {
       {/* 1. Left Section: Logo inside a Router Link wrapper */}
       <div className="flex items-center shrink-0">
         <Link to="/" className="flex flex-col items-center">
-          <div className="text-blue-900 font-bold text-4xl leading-none select-none tracking-tighter ml-6">
-            <img className="w-full h-14" src={Logo} alt="Logo" />
+          <div className="text-blue-900 font-bold text-4xl leading-none select-none tracking-tighter ml-8">
+            <img className="w-full h-10" src={Logo} alt="Logo" />
           </div>
         </Link>
       </div>

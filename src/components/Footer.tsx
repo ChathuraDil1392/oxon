@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import footer from "../assets/oxon black.png";
+import footer from "../assets/White logo copy.png";
 
 // Real-world placeholder SVGs for standard branding symbols matching your footer screenshot
 const SocialIcons: React.FC = () => (
@@ -19,15 +19,15 @@ const Footer: React.FC = () => {
     };
 
     return (
-        <footer className="w-full bg-[#050505] text-white py-14 px-6 md:px-12 font-sans border-t border-gray-900">
+        <footer className="w-full bg-black text-blue-950 py-14 px-6 md:px-12 font-sans border-t border-gray-900">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
                 {/* Left Column: Branding and Intro */}
                 <div className="lg:col-span-3 flex flex-col justify-between h-full">
                     <div>
                         {/* Logo Wrapper - Fixed to render image uninhibited by artificial borders */}
-                        <div className="text-blue-900 font-bold text-4xl leading-none select-none tracking-tighter ml-6">
-                            <img className="w-50 h-50" src={footer} alt="Logo" />
+                        <div className="text-blue-900 font-bold text-4xl leading-none select-none tracking-tighter ml-6 mb-10">
+                            <img className="w-50 h-30" src={footer} alt="Logo" />
                         </div>
 
                         {/* Description Text */}

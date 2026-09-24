@@ -34,6 +34,7 @@ export const ProjectCard: React.FC = () => {
             description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.',
             category: 'Automation',
             imagePlaceholderColor: 'bg-zinc-200',
+            hashTag: 'Most Recent Project',
             customOverlayText: '⭐ NEW YEAR',
             imageurl: automation
         },
@@ -45,6 +46,7 @@ export const ProjectCard: React.FC = () => {
             description: 'Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.',
             category: 'Access Control',
             imagePlaceholderColor: 'bg-neutral-800',
+            hashTag: 'Most Recent Project',
             customOverlayText: 'VIEW POST',
             imageurl: access
         },
@@ -56,6 +58,7 @@ export const ProjectCard: React.FC = () => {
             description: 'Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.',
             category: 'Surveillance & Monitoring',
             imagePlaceholderColor: 'bg-sky-900',
+            hashTag: 'Most Recent Project',
             customOverlayText: '82° ☀️',
             imageurl: cctv
         },
@@ -67,7 +70,6 @@ export const ProjectCard: React.FC = () => {
             description: 'Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem.',
             category: 'AC Services',
             imagePlaceholderColor: 'bg-indigo-900',
-            hashTag: 'Most Recent Project',
             imageurl: acService
         },
         {
@@ -112,7 +114,7 @@ export const ProjectCard: React.FC = () => {
                             onClick={() => setActiveTab(category)}
                             className={`px-4 py-2 text-sm rounded font-medium transition-all duration-200 ${isActive
                                 ? 'bg-blue-900 text-white shadow-sm'
-                                : 'bg-white text-neutral-500 border-blue-900 hover:bg-blue-800 hover:text-white border '
+                                : 'bg-white text-neutral-500 border-blue-900 hover:bg-blue-900 hover:text-white border '
                                 }`}
                         >
                             {category}
@@ -139,7 +141,7 @@ export const ProjectCard: React.FC = () => {
 
                             {/* Top-left Badge Indicator */}
                             {post.hashTag && (
-                                <span className="absolute top-3 left-3 bg-blue-800 text-white text-xs font-bold px-2 py-1 rounded shadow-sm">
+                                <span className="absolute top-3 left-3 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded shadow-sm">
                                     {post.hashTag}
                                 </span>
                             )}
@@ -147,7 +149,7 @@ export const ProjectCard: React.FC = () => {
 
                         {/* Text Content Block */}
                         <div className="flex flex-col space-y-2">
-                            <span className="text-xs font-bold text-blue-500 tracking-wide uppercase">
+                            <span className="text-xs font-bold bg-blue-900 w-fit px-2 py-1 rounded-lg text-white tracking-wide uppercase">
                                 {post.category}
                             </span>
 
