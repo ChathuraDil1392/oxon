@@ -2,7 +2,7 @@ import worker_1 from '../assets/worker_1.png';
 import oxon from '../assets/oxon.webp';
 import tech_2 from '../assets/tech_2.avif';
 import home from '../assets/home.png';
-import oxon_logo from '../assets/oxon_logo_small.jpg';
+import oxon_logo from '../assets/White logo copy.png';
 import orbita from '../assets/orbita.jpg';
 import tis from '../assets/tis.jpg';
 import lsvision from '../assets/lsvision.png';
@@ -309,7 +309,7 @@ const About = () => {
                 <img
                   src={timelineData[activeIdx].image}
                   alt={timelineData[activeIdx].title}
-                  className='w-14 h-14 object-cover rounded-xl border border-neutral-700 transition-all duration-300 scale-95'
+                  className='w-30 h-14 object-cover rounded-xl  transition-all duration-300 scale-95'
                 />
                 <div className='space-y-0.5'>
                   <div className='text-xs font-bold text-gray-400'>
@@ -347,21 +347,19 @@ const About = () => {
                         {/* Interactive Circle Indicator */}
                         <div className='w-5 h-5 rounded-full flex items-center justify-center bg-[#1c1c1c] z-10 transition-transform duration-300 group-hover:scale-110'>
                           <div
-                            className={`rounded-full transition-all duration-300 ${
-                              isActive
-                                ? 'w-4 h-4 bg-blue-600 ring-4 ring-blue-600/20'
-                                : 'w-2.5 h-2.5 bg-neutral-600 group-hover:bg-gray-400'
-                            }`}
+                            className={`rounded-full transition-all duration-300 ${isActive
+                              ? 'w-4 h-4 bg-blue-600 ring-4 ring-blue-600/20'
+                              : 'w-2.5 h-2.5 bg-neutral-600 group-hover:bg-gray-400'
+                              }`}
                           />
                         </div>
 
                         {/* Timeline Year text label */}
                         <span
-                          className={`text-xs font-bold mt-4 transition-colors duration-300 ${
-                            isActive
-                              ? 'text-white'
-                              : 'text-gray-500 group-hover:text-gray-300'
-                          }`}
+                          className={`text-xs font-bold mt-4 transition-colors duration-300 ${isActive
+                            ? 'text-white'
+                            : 'text-gray-500 group-hover:text-gray-300'
+                            }`}
                         >
                           {item.year}
                         </span>
@@ -446,20 +444,18 @@ const About = () => {
             {strategies.map((item) => (
               <div
                 key={item.id}
-                className={`relative rounded-[7rem] p-4 aspect-1/1.5 flex flex-col items-center justify-between text-center transition-all duration-300 group cursor-pointer ${
-                  item.isActive
-                    ? 'bg-blue-900 text-white shadow-xl shadow-red-950/20'
-                    : 'bg-white text-black hover:bg-blue-900 hover:text-white hover:shadow-xl hover:scale-[1.02]'
-                }`}
+                className={`relative rounded-[7rem] p-4 aspect-1/1.5 flex flex-col items-center justify-between text-center transition-all duration-300 group cursor-pointer ${item.isActive
+                  ? 'bg-blue-900 text-white shadow-xl shadow-red-950/20'
+                  : 'bg-white text-black hover:bg-blue-900 hover:text-white hover:shadow-xl hover:scale-[1.02]'
+                  }`}
               >
                 {/* Graphic container */}
                 <div className='h-1/2 flex items-center justify-center pt-6'>
                   <div
-                    className={`transition-transform duration-500 group-hover:rotate-6 ${
-                      item.isActive
-                        ? 'brightness-0 invert'
-                        : 'group-hover:brightness-0 group-hover:invert'
-                    }`}
+                    className={`transition-transform duration-500 group-hover:rotate-6 ${item.isActive
+                      ? 'brightness-0 invert'
+                      : 'group-hover:brightness-0 group-hover:invert'
+                      }`}
                   >
                     {item.icon}
                   </div>
@@ -468,11 +464,10 @@ const About = () => {
                 {/* Text Description Stack */}
                 <div className='space-y-3 px-2 pb-4'>
                   <span
-                    className={`text-[10px] font-bold tracking-[0.2em] uppercase ${
-                      item.isActive
-                        ? 'text-white/80'
-                        : 'text-neutral-500 group-hover:text-white/80'
-                    }`}
+                    className={`text-[10px] font-bold tracking-[0.2em] uppercase ${item.isActive
+                      ? 'text-white/80'
+                      : 'text-neutral-500 group-hover:text-white/80'
+                      }`}
                   >
                     {item.tag}
                   </span>
@@ -485,11 +480,10 @@ const About = () => {
                 {/* Action Link Arrow Icon */}
                 <div className='pb-6'>
                   <svg
-                    className={`w-5 h-5 transform transition-transform duration-300 ${
-                      item.isActive
-                        ? 'text-white translate-x-0 translate-y-0'
-                        : 'text-neutral-800 rotate-45 group-hover:rotate-0 group-hover:text-white'
-                    }`}
+                    className={`w-5 h-5 transform transition-transform duration-300 ${item.isActive
+                      ? 'text-white translate-x-0 translate-y-0'
+                      : 'text-neutral-800 rotate-45 group-hover:rotate-0 group-hover:text-white'
+                      }`}
                     fill='none'
                     stroke='currentColor'
                     strokeWidth='2'

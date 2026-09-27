@@ -141,7 +141,7 @@ export const ProjectCard: React.FC = () => {
 
                             {/* Top-left Badge Indicator */}
                             {post.hashTag && (
-                                <span className="absolute top-3 left-3 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded shadow-sm">
+                                <span className="absolute top-3 left-3  bg-blue-600 text-white text-[9px] font-bold px-2 py-1 rounded-xl shadow-sm">
                                     {post.hashTag}
                                 </span>
                             )}

@@ -1,5 +1,5 @@
 import React from 'react';
-import fingerprint from '../assets/fingerprint.png'
+import fingerprint from '../assets/fingerprint_1.png'
 import finger_2 from '../assets/finger_2.jpg'
 import finger_3 from '../assets/finger_3.png'
 
@@ -12,10 +12,10 @@ const ProductGrid: React.FC = () => {
                 {/* Main Section Title */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl">
-                        We are Providing <span className='text-blue-500'>End to End Solutions</span>
+                        We are Providing <span className='text-blue-500 underline underline-offset-4'>End to End Solutions</span>
                     </h2>
 
-                    <p className="mt-3 max-w-2xl mx-auto text-sm text-gray-500 sm:mt-4">
+                    <p className="mt-3 max-w-2xl mx-auto text-md text-gray-600 sm:mt-4">
                         Orbita has maintain the strong position and served more than 10,000 hotel clients.
                     </p>
                 </div>
@@ -24,7 +24,7 @@ const ProductGrid: React.FC = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-auto lg:h-137.5">
 
                     {/* Left Column - Large Feature Card (Strict height on mobile, fills grid on desktop) */}
-                    <div className="relative group overflow-hidden rounded-md h-87.5 lg:h-full w-full bg-gray-900">
+                    <div className="relative group overflow-hidden rounded-md h-87.5 lg:h-full w-full bg-gray-100">
                         <img
                             src={fingerprint}
                             alt="Smart Solutions"
@@ -83,7 +83,7 @@ const ProductGrid: React.FC = () => {
                                 className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-500 group-hover:scale-105"
                             />
                             <div className="absolute inset-y-0 left-0 p-8 flex flex-col justify-center text-gray-900 space-y-1 z-10">
-                                <h3 className="text-lg font-bold uppercase tracking-wide">
+                                <h3 className="text-lg font-extrabold uppercase tracking-wide">
                                     Hospitality And Home
                                 </h3>
                                 <p className="text-xs text-gray-500 font-medium">

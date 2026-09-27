@@ -105,7 +105,7 @@ export const CustomerReviews: React.FC = () => {
                     {/* Grid 1: Left Text Block */}
                     <div className="lg:col-span-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-left h-full">
                         <h2 className="text-3xl font-bold text-gray-900 tracking-tight sm:text-4xl mb-4">
-                            Customer <span className='text-blue-500'>Reviews</span>
+                            Customer <span className='text-blue-500 underline underline-offset-4'>Reviews</span>
                         </h2>
                         <p className="text-base text-gray-500 max-w-sm">
                             Explore the experiences of our clients with our work, showing our dedication to delivering exceptional results.
@@ -124,7 +124,7 @@ export const CustomerReviews: React.FC = () => {
                                 <div
                                     key={review.id}
                                     // w-[320px] + gap-6 (24px) = exactly 344px total movement per card
-                                    className="w-[320px] shrink-0 border border-white rounded-2xl p-6 bg-white shadow-sm flex flex-col justify-between"
+                                    className="w-[320px] shrink-0 rounded-2xl p-6 bg-white shadow-md flex flex-col justify-between"
                                 >
                                     <div>
                                         {/* User Profile Info */}

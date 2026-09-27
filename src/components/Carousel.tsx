@@ -86,14 +86,14 @@ const Carousel = () => {
 
       {/* 2. Absolute Content Overlay (Fixed relative to current visible frame layout) */}
       {/* 2. Absolute Content Overlay (Fixed relative to current visible frame layout) */}
-      <div className="absolute ml-15 top-1/2 -translate-y-1/2 left-0 w-full max-w-xl p-5 md:p-5 flex flex-col justify-center bg-blue-950/80 text-white pointer-events-none z-10 py-8 rounded-lg">
+      <div className="absolute ml-15 top-1/2 -translate-y-1/2 left-0 w-full max-w-xl p-5 md:p-5 flex flex-col justify-center bg-blue-950/40 text-white pointer-events-none z-10 py-8 rounded-lg">
         {/* Dynamic Title Text Layer */}
         <h1 className="text-xl md:text-2xl font-bold tracking-wide uppercase leading-tight drop-shadow-md select-text transition-all duration-500">
           {SLIDES_DATA[currentIndex].title}
         </h1>
 
         {/* Dynamic Paragraph Description Layer */}
-        <p className="mt-4 text-sm md:text-base font-light leading-relaxed max-w-lg tracking-wide drop-shadow-sm select-text transition-all duration-500 delay-70">
+        <p className="mt-4 text-xs md:text-md font-normal leading-relaxed max-w-lg tracking-wide drop-shadow-sm select-text transition-all duration-500 delay-70">
           {SLIDES_DATA[currentIndex].description}
         </p>
 

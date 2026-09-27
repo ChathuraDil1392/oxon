@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className='w-full bg-[#000b2f] text-blue-950 py-14 px-6 md:px-12 font-sans border-t-8 border-blue-500'>
+    <footer className='w-full bg-[#000b2f] text-blue-950 py-8 md:px-12 font-sans border-t-8 border-blue-500'>
       <div className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start'>
         {/* Left Column: Branding and Intro */}
         <div className='lg:col-span-3 flex flex-col justify-between h-full'>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Description Text */}
-            <p className='text-xs text-white leading-relaxed max-w-xs'>
+            <p className='text-xs font-medium text-white leading-relaxed max-w-xs'>
               Oxon Maldives Pvt Ltd &mdash; Smart Automation for Homes &amp;
               Hospitality. Exclusive Orbita Partner in the Maldives.
             </p>
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
         <div className='lg:col-span-5 grid grid-cols-1 md:grid-cols-3 gap-8 pt-4'>
           {/* Popular Categories */}
           <div>
-            <h3 className='text-sm font-bold text-white tracking-wide mb-5 underline underline-offset-8'>
+            <h3 className='text-sm font-medium text-white tracking-wide mb-5 underline underline-offset-8'>
               Popular Categories
             </h3>
             <ul className='space-y-4 text-xs text-white'>
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
 
           {/* Product Type */}
           <div>
-            <h3 className='text-sm font-bold text-white tracking-wide mb-5 underline underline-offset-8'>
+            <h3 className='text-sm font-medium text-white tracking-wide mb-5 underline underline-offset-8'>
               Product Type
             </h3>
             <ul className='space-y-4 text-xs text-white'>
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
 
           {/* Useful Links */}
           <div>
-            <h3 className='text-sm font-bold text-white tracking-wide mb-5 underline underline-offset-8'>
+            <h3 className='text-sm font-medium text-white tracking-wide mb-5 underline underline-offset-8'>
               Useful Links
             </h3>
             <ul className='space-y-4 text-xs text-white'>
@@ -123,8 +123,8 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Right Column: Embedded Form Section with True Vertical Divider */}
-        <div className='lg:col-span-4 lg:border-l lg:border-gray-800 lg:pl-10 w-full pt-4'>
-          <h3 className='text-sm font-bold text-white tracking-wide mb-4 underline underline-offset-8'>
+        <div className='lg:col-span-4 lg:border-l-2 lg:border-gray-400 lg:pl-10 w-full pt-4'>
+          <h3 className='text-sm font-medium text-white tracking-wide mb-4 underline underline-offset-8'>
             Newsletter
           </h3>
 
@@ -170,7 +170,7 @@ const Footer: React.FC = () => {
 
             <button
               type='submit'
-              className='w-full bg-blue-500 text-white hover:text-gray-900 font-semibold py-2.5 text-xs tracking-widest rounded-md transition-all duration-200 cursor-pointer hover:bg-white'
+              className='w-full bg-blue-500 text-white font-bold py-2.5 text-xs tracking-widest rounded-md transition-all duration-200 cursor-pointer hover:bg-blue-700 hover:text-white'
             >
               SEND
             </button>

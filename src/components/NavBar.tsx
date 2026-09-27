@@ -43,12 +43,12 @@ const NavBar = () => {
         </form>
 
         {/* Navigation Links using NavLink for dynamic active state highlights */}
-        <ul className="hidden md:flex items-center space-x-6 text-sm font-semibold text-gray-700">
+        <ul className="hidden md:flex items-center space-x-6 text-xs font-semibold text-gray-700">
           <li>
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `block pb-1 cursor-pointer transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
+                `block pb-1 cursor-pointer uppercase transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
                 }`
               }
             >
@@ -59,11 +59,11 @@ const NavBar = () => {
             <NavLink
               to="/products"
               className={({ isActive }) =>
-                `flex items-center space-x-1 cursor-pointer pb-1 transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
+                `flex items-center space-x-1 cursor-pointer uppercase pb-1 transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
                 }`
               }
             >
-              <span>All Products</span>
+              <span >All Products</span>
               <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-3 h-3 text-gray-400">
                 <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
               </svg>
@@ -73,7 +73,7 @@ const NavBar = () => {
             <NavLink
               to="/our_projects"
               className={({ isActive }) =>
-                `block pb-1 cursor-pointer transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
+                `block pb-1 cursor-pointer uppercase transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
                 }`
               }
             >
@@ -84,7 +84,7 @@ const NavBar = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `block pb-1 cursor-pointer transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
+                `block pb-1 cursor-pointer uppercase transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
                 }`
               }
             >
@@ -95,7 +95,7 @@ const NavBar = () => {
             <NavLink
               to="/contact"
               className={({ isActive }) =>
-                `block pb-1 cursor-pointer transition-all border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
+                `block pb-1 cursor-pointer transition-all uppercase border-b-2 ${isActive ? 'text-blue-900 border-blue-900' : 'border-transparent text-gray-700 hover:text-blue-900'
                 }`
               }
             >

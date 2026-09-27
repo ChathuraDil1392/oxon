@@ -108,9 +108,9 @@ export const NewArrivals: React.FC = () => {
         {/* Header Section */}
         <div className='text-center mb-12'>
           <h2 className='text-3xl font-bold tracking-tight sm:text-4xl text-black'>
-            Our New <span className='text-blue-500'>Products</span>
+            Our New <span className='text-blue-500 underline underline-offset-4'>Products</span>
           </h2>
-          <p className='mt-3 max-w-2xl mx-auto text-sm text-black sm:mt-4'>
+          <p className='mt-3 max-w-2xl mx-auto text-md text-gray-600 sm:mt-4'>
             Orbita has maintain the strong position and served more than 10,000
             hotel clients.
           </p>
