@@ -41,21 +41,6 @@ const ContactusPage = () => {
     console.log('Form Submitted:', formData);
   };
 
-  // const fadeUp: Variants = {
-  //   hidden: {
-  //     opacity: 0,
-  //     y: 30,
-  //   },
-  //   visible: {
-  //     opacity: 1,
-  //     y: 0,
-  //     transition: {
-  //       duration: 0.7,
-  //       ease: 'easeOut',
-  //     },
-  //   },
-  // };
-
   const fadeLeft: Variants = {
     hidden: {
       opacity: 0,
@@ -115,16 +100,19 @@ const ContactusPage = () => {
           HERO SECTION
       ========================================================= */}
       <motion.section
-        className='relative text-white py-20 px-6 sm:px-12 md:px-24 min-h-120 flex items-center bg-blue-900 bg-cover bg-center bg-no-repeat'
+        className="relative text-white py-20 px-6 sm:px-12 md:px-24 min-h-120 flex items-center bg-blue-900 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${banner})`,
         }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{
+          duration: 1.2,
+          ease: "easeOut",
+        }}
       >
-        <div className='max-w-6xl mx-auto w-full'>
-          {/* Your content can be added here */}
+        <div className="max-w-6xl mx-auto w-full">
+          {/* Your content */}
         </div>
       </motion.section>
 
@@ -589,7 +577,7 @@ const ContactusPage = () => {
                     damping: 20,
                   }}
                 >
-                  Send enquiry
+                  Send Inquiry
 
                   <motion.span
                     initial={{

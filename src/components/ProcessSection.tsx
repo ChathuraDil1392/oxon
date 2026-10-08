@@ -60,7 +60,7 @@ const ProcessSection: React.FC = () => {
                     {steps.map((step, index) => (
                         <div
                             key={index}
-                            className={`relative ${index % 2 === 0 ? 'bg-white' : 'bg-blue-900'} border-2 border-blue-900 ${index % 2 === 0 ? 'text-black' : 'text-white'} rounded-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-700 ease-in-out flex flex-col justify-between overflow-hidden group hover:bg-blue-900 hover:shadow-[0_8px_30px_rgba(30,58,138,0.3)]`}
+                            className={`relative ${index % 2 === 0 ? 'bg-white' : 'bg-blue-900'} border border-blue-900 ${index % 2 === 0 ? 'text-black' : 'text-white'} rounded-xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-700 ease-in-out flex flex-col justify-between overflow-hidden group hover:bg-blue-900 hover:shadow-[0_8px_30px_rgba(30,58,138,0.3)]`}
 
                         >
                             {/* Background Decorative Dotted Pattern — hidden on hover to keep the blue background clean */}

@@ -1,7 +1,7 @@
 import React from 'react';
 import fingerprint from '../assets/fingerprint_1.png'
-import finger_2 from '../assets/finger_2.jpg'
-import finger_3 from '../assets/finger_3.png'
+import finger_3 from '../assets/zkt_promote.jpg'
+import finger_2 from '../assets/tis_promote.jpg'
 
 const ProductGrid: React.FC = () => {
     return (
@@ -35,7 +35,7 @@ const ProductGrid: React.FC = () => {
 
                         {/* Text Content Container */}
                         <div className="absolute bottom-0 right-0 p-8 text-right text-white space-y-1 z-10">
-                            <h3 className="text-xl font-bold uppercase tracking-wide">
+                            <h3 className="text-xl font-bold  tracking-wide">
                                 Smart Solutions
                             </h3>
                             <p className="text-xs text-gray-200 font-normal">
@@ -53,13 +53,13 @@ const ProductGrid: React.FC = () => {
                     <div className="flex flex-col md:grid md:grid-rows-2 gap-6 h-auto lg:h-full">
 
                         {/* Top Right Card */}
-                        <div className="relative group overflow-hidden rounded-md h-50 md:h-65.5 lg:h-full w-full bg-gray-900">
+                        <div className="relative group overflow-hidden rounded-md h-50 md:h-65.5 lg:h-full w-full bg-gray-500">
                             <img
                                 src={finger_3}
                                 alt="Innovation Meets Elegance"
                                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-black/40" />
+                            <div className="absolute inset-0 bg-black/20" />
                             <div className="absolute inset-y-0 left-0 p-8 flex flex-col justify-center text-white space-y-1 z-10">
                                 <h3 className="text-lg font-bold tracking-tight">
                                     Innovation Meets Elegance
@@ -82,11 +82,11 @@ const ProductGrid: React.FC = () => {
                                 alt="Hospitality and Home"
                                 className="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-90 transition-transform duration-500 group-hover:scale-105"
                             />
-                            <div className="absolute inset-y-0 left-0 p-8 flex flex-col justify-center text-gray-900 space-y-1 z-10">
-                                <h3 className="text-lg font-extrabold uppercase tracking-wide">
-                                    Hospitality And Home
+                            <div className="absolute inset-y-0 left-0 p-8 flex flex-col justify-center text-white space-y-1 z-10">
+                                <h3 className="text-lg font-extrabold  tracking-wide">
+                                    Hospitality and Home
                                 </h3>
-                                <p className="text-xs text-gray-500 font-medium">
+                                <p className="text-xs text-gray-100 font-medium">
                                     Don't Miss The Opportunity
                                 </p>
                                 <div className="pt-2">

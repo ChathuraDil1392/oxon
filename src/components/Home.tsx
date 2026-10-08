@@ -6,18 +6,30 @@ import CustomerReviews from './CustomerReviews'
 import { NewArrivals } from './NewArrivals'
 import ProcessSection from './ProcessSection'
 import ProductGrid from './ProductGrid'
+import backgroundImage from '../assets/back_7.jpg';
 
 const Home = () => {
     return (
         <>
-            <Carousel />
-            <BrandBanner />
-            <AnnouncementTicker />
-            <NewArrivals />
-            <ProductGrid />
-            <Company_Services />
-            <CustomerReviews />
-            <ProcessSection />
+            <main className='relative min-h-screen overflow-hidden'>
+
+                {/* Full Page Background */}
+                <div
+                    className='fixed inset-0 z-0 bg-cover bg-center bg-no-repeat pointer-events-none opacity-15'
+                    style={{
+                        backgroundImage: `url(${backgroundImage})`,
+                    }}
+                />
+                <Carousel />
+                <BrandBanner />
+                <AnnouncementTicker />
+                <NewArrivals />
+                <ProductGrid />
+                <Company_Services />
+                <CustomerReviews />
+                <ProcessSection />
+
+            </main >
         </>
     )
 }

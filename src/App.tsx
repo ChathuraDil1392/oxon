@@ -11,6 +11,7 @@ import NavBar from './components/NavBar'
 import Home from './components/Home'
 import OurProjetcs from './components/OurProjetcs'
 import ProductDisplay from './components/ProductDisplay'
+import ScrollToTop from './components/controlComponents/ScrollUp'
 // import Popular_Products from './components/Popular_Products'
 // import Product_Categories from './components/Product_Categories'
 //import CleanProductGrid from './components/CleanProductGrid'
@@ -24,7 +25,7 @@ function App() {
       <BrowserRouter>
         <HeaderBar />
         <NavBar />
-
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} />,
           <Route path='/about' element={<About />} />
